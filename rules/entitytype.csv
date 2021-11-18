@@ -1,0 +1,39 @@
+Entity Type,Entity Type Description
+CS,Corporation Sole
+CU,Credit Union
+DC55,Cooperative Association
+DC55-PBC,Cooperative Association-Public Benefit Corporation
+DC56,Cooperative
+DC56-PBC,Cooperative-Public Benefit Corporation
+DLCA,Limited Cooperative Association
+DLCA-PBC,Limited Cooperative Association-Public Benefit Corporation
+DLLC,Limited Liability Company
+DLLLP,Limited Liability Limited Partnership
+DLLP,Limited Liability Partnership
+DLP,Limited Partnership
+DLPA,Limited Partnership Association
+DNC,Nonprofit Corporation
+DPC,Corporation
+DPC-PBC,Corporation-Public Benefit Corporation
+DT,Ditch Company
+FCOOP,Foreign Cooperative
+FLCA,Foreign Limited Cooperative Association
+FLLC,Foreign Limited Liability Company
+FLLLP,Foreign Limited Liability Limited Partnership
+FLLP,Foreign Limited Liability Partnership
+FLP,Foreign Limited Partnership
+FLPA,Foreign Limited Partnership Association
+FNC,Foreign Nonprofit Corporation
+FO,Foreign Other
+FPC,Foreign Corporation
+GP,General Partnership
+IC,Insurance Company
+IND,Individual
+RG,Foreign Name Registration
+RS,Name Reservation
+SL,Savings And Loan
+SP,Sole Proprietorship
+TMSM,Trademark/Service Mark
+TRDNAM,Tradename
+UNA,Unincorporated Nonprofit Association
+WC,Water Company

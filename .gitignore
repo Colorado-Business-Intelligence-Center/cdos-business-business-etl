@@ -1,3 +1,9 @@
+# BIC
+.secrets
+*.tsv
+*.csv
+!rules/*.csv
+
 # Logs
 logs
 *.log

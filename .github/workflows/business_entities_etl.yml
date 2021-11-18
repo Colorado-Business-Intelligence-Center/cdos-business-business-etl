@@ -1,0 +1,35 @@
+---
+name: CDOS Business Entities
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * *'
+# on:
+#   workflow_dispatch:
+#   push:
+#     branches:
+#       - main
+
+jobs:
+  etl:
+    name: ETL for CDOS Business Entities
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: extract
+        run: curl -o business_entities.tsv -u $CDOS_SFTP_USERNAME:$CDOS_SFTP_PASSWORD -n --insecure --ftp-ssl sftp://ftps.sos.state.co.us/businessmaster/corpmstr.txt
+        env:
+          CDOS_SFTP_USERNAME: ${{ secrets.CDOS_SFTP_USERNAME }}
+          CDOS_SFTP_PASSWORD: ${{ secrets.CDOS_SFTP_PASSWORD }}
+      - name: setup-transform
+        run: npm i
+      - name: transform
+        run: npm run business_entities_transform
+      - name: CDOS biz entities transformed
+        uses: actions/upload-artifact@v1
+        with:
+          name: cdos_biz_entities
+          path: ./business_entities.csv
+

@@ -1,0 +1,36 @@
+{
+  "name": "cdos_business_business",
+  "version": "1.0.0",
+  "description": "ETL for CDOS Business datasets (business entities, etc)",
+  "main": "business_entities.js",
+  "dependencies": {
+    "commander": "^3.0.1",
+    "csv-parse": "^4.4.5",
+    "csv-stringify": "^5.3.3",
+    "dotenv": "^8.2.0",
+    "moment": "^2.24.0",
+    "stream-transform": "^2.0.1",
+    "underscore": "^1.13.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "none",
+    "business_entities_transform": "node business_entities.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoCodeColorado/bic_etl.git"
+  },
+  "keywords": [
+    "bic",
+    "gocode",
+    "etl",
+    "business"
+  ],
+  "author": "James Brown",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GoCodeColorado/bic_etl/issues"
+  },
+  "homepage": "https://github.com/GoCodeColorado/bic_etl#readme"
+}
