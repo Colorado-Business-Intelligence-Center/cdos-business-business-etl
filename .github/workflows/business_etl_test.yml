@@ -6,7 +6,7 @@ on:
 
 jobs:
   business_etl_test:
-    name: ETL for CDOS Business Entities
+    name: Business ETL Test
     runs-on: ubuntu-latest
     env:
       CDOS_SFTP_USERNAME: ${{ secrets.CDOS_SFTP_USERNAME }}
@@ -21,7 +21,7 @@ jobs:
         run: npm run test
       - name: light validation for business entities
         run: head ./business_entities.csv
-      - name: CDOS biz entities transformed
+      - name: CDOS business data upload
         uses: actions/upload-artifact@v2
         if: ${{ !env.ACT }}
         with:
