@@ -1,0 +1,29 @@
+---
+name: CDOS Business Tests
+
+on:
+  push:
+
+jobs:
+  business_etl_test:
+    name: Business ETL Test
+    runs-on: ubuntu-latest
+    env:
+      CDOS_SFTP_USERNAME: ${{ secrets.CDOS_SFTP_USERNAME }}
+      CDOS_SFTP_PASSWORD: ${{ secrets.CDOS_SFTP_PASSWORD }}
+      DATASYNC_CONFIG: ${{ secrets.DATASYNC_CONFIG }}
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: setup
+        run: npm i
+      - name: run all tests
+        run: npm run test
+      - name: light validation for business entities
+        run: head ./business_entities.csv
+      - name: CDOS business data upload
+        uses: actions/upload-artifact@v2
+        if: ${{ !env.ACT }}
+        with:
+          name: cdos_business_data
+          path: "*.csv"
