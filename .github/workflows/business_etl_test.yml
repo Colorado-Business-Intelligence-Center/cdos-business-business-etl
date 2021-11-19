@@ -22,7 +22,7 @@ jobs:
       - name: light validation for business entities
         run: head ./business_entities.csv
       - name: CDOS biz entities transformed
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2
         if: ${{ !env.ACT }}
         with:
           name: cdos_business_data
