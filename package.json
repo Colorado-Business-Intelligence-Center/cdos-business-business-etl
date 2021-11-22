@@ -17,9 +17,8 @@
   "scripts": {
     "business_entities:extract": "curl -o business_entities.tsv -u $CDOS_SFTP_USERNAME:$CDOS_SFTP_PASSWORD -n --insecure --ftp-ssl sftp://ftps.sos.state.co.us/businessmaster/corpmstr.txt",
     "business_entities:transform": "node business_entities.js",
-    "business_entities:load": "java -jar ../DataSync.jar business_entities.sij",
     "business_entities": "npm-run-all business_entities:*",
-    "business_entities_action:full": "act -j business_entities_etl --secret-file ../.secrets",
+    "business_entities_action": "act -j business_entities_etl --secret-file ../.secrets",
     "action:test": "act -j business_etl_test --secret-file ../.secrets",
     "test": "npm-run-all -l -s extract-all transform-all",
     "extract-all": "npm-run-all -l -p *:extract",
@@ -27,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GoCodeColorado/bic_etl.git"
+    "url": "git+https://github.com/Xentity-test-etl-actions/cdos-business-business-etl.git"
   },
   "keywords": [
     "bic",
@@ -38,7 +37,7 @@
   "author": "James Brown",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GoCodeColorado/bic_etl/issues"
+    "url": "https://github.com/Xentity-test-etl-actions/cdos-business-business-etl/issues"
   },
-  "homepage": "https://github.com/GoCodeColorado/bic_etl#readme"
+  "homepage": "https://github.com/Xentity-test-etl-actions/cdos-business-business-etl#readme"
 }

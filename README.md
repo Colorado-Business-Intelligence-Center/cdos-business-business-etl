@@ -35,14 +35,12 @@ available via `npm run-script`:
     curl -o business_entities.tsv -u $CDOS_SFTP_USERNAME:$CDOS_SFTP_PASSWORD -n --insecure --ftp-ssl sftp://ftps.sos.state.co.us/businessmaster/corpmstr.txt
   business_entities:transform
     node business_entities.js
-  business_entities:load
-    java -jar ../DataSync.jar business_entities.sij
   business_entities
     npm-run-all business_entities:*
-  business_entities_action:full
+  business_entities_action
     act -j business_entities_etl --secret-file ../.secrets
-  business_entities_action:test
-    act -j business_entities_etl_test --secret-file ../.secrets
+  action:test
+    act -j business_etl_test --secret-file ../.secrets
   extract-all
     npm-run-all -l -p *:extract
   transform-all
@@ -55,9 +53,7 @@ Each dataset has it's own workflow file, to be scheduled separately.
 There is a "test" that runs the extract and the transform, then saves
 the files for user inspection. This will be useful when reviewing PR's.
 
-There are several setup steps that occur for the load in GitHub
-Actions, namely
- - Downloading DataSync
- - Configure Datasync
- - Install java
- - Setup dependencies (npm)
+The standard scheduled action is of the form `setup`, `extract`, `transform`,
+and `load`. The load is defined in the GitHub action only, to encourage usage
+of automated github workflows. If needed to run locally, either use
+Act CLI or copy commands manually.

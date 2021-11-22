@@ -13,29 +13,20 @@ jobs:
     env:
       CDOS_SFTP_USERNAME: ${{ secrets.CDOS_SFTP_USERNAME }}
       CDOS_SFTP_PASSWORD: ${{ secrets.CDOS_SFTP_PASSWORD }}
-      DATASYNC_CONFIG: ${{ secrets.DATASYNC_CONFIG }}
     steps:
       - name: checkout
         uses: actions/checkout@v2
-      - name: download datasync
-        uses: carlosperate/download-file-action@v1.0.3
-        with:
-          file-url: 'https://github.com/socrata/datasync/releases/download/1.9.6/DataSync-1.9.6.jar'
-          file-name: 'DataSync.jar'
-          location: '../'
-      - name: 'java setup'
-        uses: actions/setup-java@v2
-        with:
-          java-version: '11'
-          distribution: 'adopt'
       - name: setup dependencies
-        run: |
-          npm i
-          echo $DATASYNC_CONFIG > ../config.json
-          java -jar ../DataSync.jar -t LoadPreferences -c ../config.json
+        run: npm i
       - name: extract
         run: npm run business_entities:extract
       - name: transform
         run: npm run business_entities:transform
       - name: load
-        run: npm run business_entities:load
+        env:
+          DATASET_ID: 4ykn-tg5h
+          UPLOAD_FILE: business_entities.csv
+          CONFIG_NAME: business_entities_11-22-2021_f71d
+        run: |
+          pip install socrata-py~=1.0.0
+          python3 socrata-updater.py
