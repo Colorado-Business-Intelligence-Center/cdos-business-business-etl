@@ -22,7 +22,11 @@
     "action:test": "act -j business_etl_test --secret-file ../.secrets",
     "test": "npm-run-all -l -s extract-all transform-all",
     "extract-all": "npm-run-all -l -p *:extract",
-    "transform-all": "npm-run-all -l -p *:transform"
+    "transform-all": "npm-run-all -l -p *:transform",
+    "trademarks:extract": "curl -o trademarks.tsv -u $CDOS_SFTP_USERNAME:$CDOS_SFTP_PASSWORD -n --insecure --ftp-ssl sftp://ftps.sos.state.co.us/trademarks/trademarks.txt",
+    "trademarks:transform": "node trademarks.js",
+    "trademarks": "npm-run-all trademarks:*",
+    "trademarks_action": "act -j trademarks_etl --secret-file ../.secrets"
   },
   "repository": {
     "type": "git",

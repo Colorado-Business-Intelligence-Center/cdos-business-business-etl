@@ -1,0 +1,39 @@
+---
+name: CDOS Trademarks 
+
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: '0 3 * * *'
+
+jobs:
+  trademarks_etl:
+    name: ETL for CDOS Trademarks
+    runs-on: ubuntu-latest
+    env:
+      CDOS_SFTP_USERNAME: ${{ secrets.CDOS_SFTP_USERNAME }}
+      CDOS_SFTP_PASSWORD: ${{ secrets.CDOS_SFTP_PASSWORD }}
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: test pip
+        if: ${{ env.ACT }}
+        run: |
+          curl -sSL https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+          python get-pip.py
+      - name: setup dependencies
+        run: npm i
+      - name: extract
+        run: npm run trademarks:extract
+      - name: transform
+        run: npm run trademarks:transform
+      - name: load
+        env:
+          MY_SOCRATA_USERNAME: ${{ secrets.MY_SOCRATA_USERNAME }}
+          MY_SOCRATA_PASSWORD: ${{ secrets.MY_SOCRATA_PASSWORD }}
+          DATASET_ID: d3m2-b6we
+          UPLOAD_FILE: trademarks.csv
+          CONFIG_NAME: trademarks_11-23-2021_da45
+        run: |
+          pip install socrata-py~=1.0.0
+          python3 socrata-updater.py

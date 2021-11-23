@@ -1,65 +1,50 @@
-require('dotenv').config({path: __dirname + '/../../../../.env'});
 const fs = require('fs');
 const path = require('path');
 const program = require('commander');
 const parse = require('csv-parse');
 const transform = require('stream-transform');
 const stringify = require('csv-stringify');
-const custom_log = require(path.join(process.env.bic_etl_home, 'general/scripts/custom_log.js'));
 
 program
-	.option('-t, --title <n>', 'Dataset Title')
 	.option('-f, --folderpath <n>', '/usr/local/cim/data/source/sos/trademarks/')
 	.option('-e, --ext <n>', '.txt')
 	.parse(process.argv);
 
-program.title = (program.title) ? program.title : 'Trademarks';
 let log = {};
-custom_log.setup(program.title, function(custom_logger) {
-  log = custom_logger;
-  try {
-    initiate();
-  } catch(e) {
-    log.error("Unhandled error: " + e);
-    process.exit();
-  }
-});
 
 let trademark_form_list = {};
 
-function initiate() {
-	log.info("Program Started");
+console.log("Program Started");
 
-	let ext = (program.ext) ? program.ext : '.txt';
-	let filepath = (program.folderpath) ? program.folderpath : path.join(process.env.bic_etl_home, 'cdos', 'business', 'business', 'data_source', 'trademarks.tsv');
-	filepath = path.resolve(filepath);
+let ext = (program.ext) ? program.ext : '.txt';
+let filepath = (program.folderpath) ? program.folderpath : path.join('trademarks.tsv');
+filepath = path.resolve(filepath);
 
-	if (!fs.existsSync(filepath)) {
-		log.warn("Folder does not does not exist to load CSV files for analysis: " + filepath);
-		process.exit(0);
-	}
-
-	let outfile = path.join(process.env.bic_etl_home, 'cdos', 'business', 'business', 'data_transformed', 'trademarks.csv');
-	let trademark_form_file = path.join(process.env.bic_etl_home, 'cdos', 'business', 'business', 'scripts', 'rules', 'trademark_form.csv');
-
-
-	let input_stream = fs.createReadStream(trademark_form_file)
-	.on('error', error_handler);
-	//Parse input
-	let trademark_form_parser = parse({
-			delimiter: ",",
-			columns: true
-	}).on('readable', function(){
-		let record
-		while (record = this.read()) {
-			trademark_form_list[record['key']] = record['value'];
-		}
-	}).on('end', function() {
-		transform_trademarks(filepath, outfile); // Executes the processing
-	})
-	input_stream.pipe(trademark_form_parser);
-
+if (!fs.existsSync(filepath)) {
+  console.error("Folder does not does not exist to load CSV files for analysis: " + filepath);
+  process.exit(0);
 }
+
+let outfile = path.join('trademarks.csv');
+let trademark_form_file = path.join('rules', 'trademark_form.csv');
+
+let input_stream = fs.createReadStream(trademark_form_file)
+.on('error', error_handler);
+//Parse input
+let trademark_form_parser = parse({
+    delimiter: ",",
+    columns: true
+}).on('readable', function(){
+  let record
+  while (record = this.read()) {
+    trademark_form_list[record['key']] = record['value'];
+  }
+}).on('end', function() {
+  transform_trademarks(filepath, outfile); // Executes the processing
+})
+input_stream.pipe(trademark_form_parser);
+
+
 
 var header_columns = [
     "masterTrademarkId",
@@ -123,7 +108,7 @@ function transformation(row) {
 }
 
 function error_handler(e) {
-    log.error("Error mid-stream: " + e);
+    console.error("Error mid-stream: " + e);
     setTimeout(function() {
       process.exit(1);
     }, 200);
@@ -133,7 +118,7 @@ function error_handler(e) {
    This function will get the files to be transformed and perform the transform
 */
 function transform_trademarks(file_path, outfile) {
-  log.debug("Files to be transformed: " + file_path);
+  console.log("Files to be transformed: " + file_path);
   //Original file
   let input_stream = fs.createReadStream(file_path)
   .on('error', error_handler);
@@ -160,6 +145,6 @@ function transform_trademarks(file_path, outfile) {
 
   //Once complete
   output_stream.on('finish', function() {
-      log.debug('All items have been processed, final file is at: '+ outfile);
+      console.log('All items have been processed, final file is at: '+ outfile);
   });
 }
