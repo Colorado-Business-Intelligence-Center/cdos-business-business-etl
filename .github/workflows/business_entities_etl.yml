@@ -16,7 +16,7 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
-      - name: test pip
+      - name: setup pip
         if: ${{ env.ACT }}
         run: |
           curl -sSL https://bootstrap.pypa.io/get-pip.py -o get-pip.py
