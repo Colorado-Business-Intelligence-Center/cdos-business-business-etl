@@ -1,0 +1,93 @@
+[{
+    "title": "Business Entity Transaction History",
+    "extract": [{
+      "language": "node",
+      "file": "general/scripts/sftp_extract.js",
+      "options": [
+        "-f businesstrans/corphist-1.txt",
+        "-o cdos/business/business/data_source/",
+        "-a .tsv"
+        ]
+    }, {
+      "language": "node",
+      "file": "general/scripts/sftp_extract.js",
+      "options": [
+        "-f businesstrans/corphist-2.txt",
+        "-o cdos/business/business/data_source/",
+        "-a .tsv"
+        ]
+    }],
+    "transform": {
+      "language": "node",
+      "file": "corporate_history.js"
+    },
+    "load": {
+      "file": "corporate_history.sij",
+      "type": "datasync",
+      "format": "csv",
+      "load_file": "corphist.csv"
+    }
+  }, {
+    "title": "Trademarks for Businesses in Colorado",
+    "extract": {
+      "language": "node",
+      "file": "general/scripts/sftp_extract.js",
+      "options": [
+        "-f trademarks/trademarks.txt",
+        "-o cdos/business/business/data_source/",
+        "-a .tsv"
+        ]
+    },
+    "transform": {
+      "language": "node",
+      "file": "trademarks.js"
+    },
+    "load": {
+      "file": "trademarks.sij",
+      "type": "datasync",
+      "format": "csv",
+      "load_file": "trademarks.csv"
+    }
+  }, {
+    "title": "Trade Names for Businesses in Colorado",
+    "extract": {
+      "language": "node",
+      "file": "general/scripts/sftp_extract.js",
+      "options": [
+        "-f tradenames/tradenames.txt",
+        "-o cdos/business/business/data_source/",
+        "-a .tsv"
+        ]
+    },
+    "transform": {
+      "language": "node",
+      "file": "tradenames.js"
+    },
+    "load": {
+      "file": "tradenames.sij",
+      "type": "datasync",
+      "format": "csv",
+      "load_file": "tradenames.csv"
+    }
+  }, {
+    "title": "Master List in Colorado",
+    "extract": {
+      "language": "node",
+      "file": "general/scripts/request_url.js",
+      "options": [
+        "-f cdos/business/business/data_source/masterlist.tsv",
+        "-u http://www.sos.state.co.us/pubs/UCC/masterListDownloads/UCCMstrLB1.txt"
+        ]
+    },
+    "transform": {
+      "language": "node",
+      "file": "masterlist.js"
+    },
+    "load": {
+      "file": "masterlist.sij",
+      "type": "datasync",
+      "format": "csv",
+      "load_file": "masterlist.csv"
+    }
+  }]
+  
