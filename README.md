@@ -57,3 +57,15 @@ The standard scheduled action is of the form `setup`, `extract`, `transform`,
 and `load`. The load is defined in the GitHub action only, to encourage usage
 of automated github workflows. If needed to run locally, either use
 Act CLI or copy commands manually.
+
+## TODO
+There are a number of TODO items that will need to be addressed to take
+this from a pilot to a fully functioning GitHub organization that runs
+all the ETL's.
+
+1. Move socrata-updater.py to a "generic" or "helper" repository, and pull in dynamically.
+    We may also want to use parameters instead of environment variables for certain options.
+1. Create a "confirmation" framework. This may look different for different datasets;
+    some may be able to hit the data API, others may need to check the metadata API.
+1. Should figure out from this framework how much work it takes to port a "node" suite
+1. Should try a python suite to figure out how long that takes
