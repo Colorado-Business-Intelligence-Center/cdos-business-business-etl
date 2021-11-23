@@ -16,6 +16,11 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
+      - name: test pip
+        if: ${{ env.ACT }}
+        run: |
+          curl -sSL https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+          python get-pip.py
       - name: setup dependencies
         run: npm i
       - name: extract
@@ -24,6 +29,8 @@ jobs:
         run: npm run business_entities:transform
       - name: load
         env:
+          MY_SOCRATA_USERNAME: ${{ secrets.MY_SOCRATA_USERNAME }}
+          MY_SOCRATA_PASSWORD: ${{ secrets.MY_SOCRATA_PASSWORD }}
           DATASET_ID: 4ykn-tg5h
           UPLOAD_FILE: business_entities.csv
           CONFIG_NAME: business_entities_11-22-2021_f71d
