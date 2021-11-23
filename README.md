@@ -65,6 +65,7 @@ all the ETL's.
 
 1. Move socrata-updater.py to a "generic" or "helper" repository, and pull in dynamically.
     We may also want to use parameters instead of environment variables for certain options.
+1. Expand Socrata upload datatypes/formats to include shapefiles, geojson, pandas dataframe (geodata).
 1. Create a "confirmation" framework. This may look different for different datasets;
     some may be able to hit the data API, others may need to check the metadata API.
 1. Should figure out from this framework how much work it takes to port a "node" suite
