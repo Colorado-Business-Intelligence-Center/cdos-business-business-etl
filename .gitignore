@@ -3,6 +3,7 @@
 *.tsv
 *.csv
 !rules/*.csv
+!historical files/*.csv
 
 # Logs
 logs
