@@ -1,6 +1,11 @@
 # cdos-business-business-etl
 ETL processes for the CDOS business/business data to data.colorado.gov
 
+## Dataset ETL's
+- [![CDOS Business Tests](https://github.com/Xentity-test-etl-actions/cdos-business-business-etl/actions/workflows/business_etl_test.yml/badge.svg)](https://github.com/Xentity-test-etl-actions/cdos-business-business-etl/actions/workflows/business_etl_test.yml)
+- [![Business Entities in Colorado](https://github.com/Xentity-test-etl-actions/cdos-business-business-etl/actions/workflows/business_entities_etl.yml/badge.svg)](https://github.com/Xentity-test-etl-actions/cdos-business-business-etl/actions/workflows/business_entities_etl.yml)
+
+
 ## Requirements
 In order to develop with this system, you'll need the following:
  - [Socrata DataSync](https://github.com/socrata/datasync/releases)
