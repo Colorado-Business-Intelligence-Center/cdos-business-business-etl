@@ -3,8 +3,8 @@ name: CDOS Business Entities
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 3 * * *'
+  # schedule:
+  #   - cron: '0 3 * * *'
 
 jobs:
   business_entities_etl:
