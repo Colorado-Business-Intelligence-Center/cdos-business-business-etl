@@ -4,7 +4,7 @@ name: CDOS Trademarks
 on:
   workflow_dispatch:
   # schedule:
-  #   - cron: '0 3 * * *'
+  #   - cron: '0 4 * * 2'
 
 jobs:
   trademarks_etl:
