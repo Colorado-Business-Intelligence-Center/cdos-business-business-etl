@@ -145,6 +145,7 @@ function transform_tradenames(file_path, outfile) {
 	.on('error', error_handler);
   //Parse input
   let tradenames_parser = parse({
+      quote: '', // disable quoting
       delimiter: "\t",
       columns: true
   })
@@ -159,6 +160,7 @@ function transform_tradenames(file_path, outfile) {
   })
   .on('error', error_handler);
   // Connect all streams
+
   input_stream.pipe(tradenames_parser).pipe(tradenames_transformer).pipe(tradenames_stringifier).pipe(output_stream);
 
   //Once complete
