@@ -1,5 +1,5 @@
 ---
-name: CDOS Business Entities
+name: Business Entities in Colorado
 
 on:
   workflow_dispatch:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   business_entities_etl:
-    name: ETL for CDOS Business Entities
+    name: Business Entities in Colorado ETL
     runs-on: ubuntu-latest
     env:
       CDOS_SFTP_USERNAME: ${{ secrets.CDOS_SFTP_USERNAME }}
