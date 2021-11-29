@@ -28,18 +28,6 @@
       "load_file": "corphist.csv"
     }
   }, {
-      "title": "Trade Names for Businesses in Colorado",
-      "transform": {
-        "language": "node",
-        "file": "tradenames.js"
-      },
-      "load": {
-        "file": "tradenames.sij",
-        "type": "datasync",
-        "format": "csv",
-        "load_file": "tradenames.csv"
-      }
-  }, {
     "title": "Master List in Colorado",
     "extract": {
       "language": "node",
