@@ -28,27 +28,6 @@
       "load_file": "corphist.csv"
     }
   }, {
-    "title": "Trademarks for Businesses in Colorado",
-    "extract": {
-      "language": "node",
-      "file": "general/scripts/sftp_extract.js",
-      "options": [
-        "-f trademarks/trademarks.txt",
-        "-o cdos/business/business/data_source/",
-        "-a .tsv"
-        ]
-    },
-    "transform": {
-      "language": "node",
-      "file": "trademarks.js"
-    },
-    "load": {
-      "file": "trademarks.sij",
-      "type": "datasync",
-      "format": "csv",
-      "load_file": "trademarks.csv"
-    }
-  }, {
     "title": "Trade Names for Businesses in Colorado",
     "extract": {
       "language": "node",
