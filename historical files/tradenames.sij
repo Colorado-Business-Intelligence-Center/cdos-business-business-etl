@@ -1,0 +1,16 @@
+{
+	"defaultJobName" : "SOS Tradenames",
+	"datasetID" : "u7sb-g482",
+	"fileToPublish":"/usr/local/cim/bic_etl/cdos/business/business/data_transformed/tradenames.csv",
+	"publishMethod" : "replace",
+	"fileToPublishHasHeaderRow" : true,
+	"pathToControlFile" : "",
+	"controlFileContent" : "{\n  \"action\" : \"Replace\", \n  \"csv\" :\n    {\n      \"columns\" : null,\n      \"skip\" : 0,\n      \"fixedTimestampFormat\" : [\"ISO8601\",\"MM/dd/yy\",\"MM/dd/yyyy\",\"dd-MMM-yyyy\"],\n      \"floatingTimestampFormat\" : [\"ISO8601\",\"MM/dd/yy\",\"MM/dd/yyyy\",\"dd-MMM-yyyy\"],\n      \"timezone\" : \"UTC\",\n      \"separator\" : \",\",\n      \"quote\" : \"\\\"\",\n      \"encoding\" : \"utf-8\",\n      \"emptyTextIsNull\" : true,\n      \"trimWhitespace\" : true,\n      \"trimServerWhitespace\" : true,\n      \"overrides\" : {}\n    }\n}",
+	"publishViaFTP" : false,
+	"publishViaDi2Http" : true,
+	"pathToFTPControlFile" : "",
+	"fileVersionUID" : 4,
+	"pathToSavedFile":"/usr/local/cim/bic_etl/cdos/business/business/data_transformed/tradenames.csv",
+	"jobFilename" : "sos-tradenames.sij",
+	"ftpControlFileContent" : "{\n  \"action\" : \"Replace\", \n  \"csv\" :\n    {\n      \"columns\" : null,\n      \"skip\" : 0,\n      \"fixedTimestampFormat\" : [\"ISO8601\",\"MM/dd/yy\",\"MM/dd/yyyy\",\"dd-MMM-yyyy\"],\n      \"floatingTimestampFormat\" : [\"ISO8601\",\"MM/dd/yy\",\"MM/dd/yyyy\",\"dd-MMM-yyyy\"],\n      \"timezone\" : \"UTC\",\n      \"separator\" : \",\",\n      \"quote\" : \"\\\"\",\n      \"encoding\" : \"utf-8\",\n      \"emptyTextIsNull\" : true,\n      \"trimWhitespace\" : true,\n      \"trimServerWhitespace\" : true,\n      \"overrides\" : {}\n    }\n}"
+}

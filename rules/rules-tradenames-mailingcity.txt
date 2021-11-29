@@ -1,0 +1,3206 @@
+[
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column City",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "State",
+          "selectBlank": false,
+          "columnName": "State",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "CO",
+                "l": "CO"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "City",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Colorado Springsa",
+          "Colorado Springs",
+          "Colorado Springsd",
+          "Colrado Springs",
+          "Colorado Springs,",
+          "Coorado Springs",
+          "Colordo Springs",
+          "Coloradosprings",
+          "Colorado,springs"
+        ],
+        "to": "Colorado Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Grand Junctionj",
+          "Grand Junction",
+          "Grand Junction,",
+          "Grand Junctioon",
+          "Grandjunction",
+          "Grand Juntion"
+        ],
+        "to": "Grand Junction"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Grand Junctionj",
+          "Grand Junction",
+          "Grand Junction,",
+          "Grand Junctioon",
+          "Grandjunction"
+        ],
+        "to": "Grand Junction"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column City",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "State",
+          "selectBlank": false,
+          "columnName": "State",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "CO",
+                "l": "CO"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "City",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Fort Collns",
+          "Fort Colllins",
+          "Fort Collins",
+          "Fort. Collins",
+          "Fortcollins"
+        ],
+        "to": "Fort Collins"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Westmister",
+          "Westminter",
+          "Westminster,",
+          "Westminster"
+        ],
+        "to": "Westminster"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Commerce Cuty",
+          "Commercecity",
+          "Commerce City",
+          "Commerece City"
+        ],
+        "to": "Commerce City"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Greenwood Vllage",
+          "Greenwood Village,",
+          "Greenwood Villiage",
+          "Greenwood Village"
+        ],
+        "to": "Greenwood Village"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Westmister",
+          "Westmisnter",
+          "Westmintser",
+          "Westminter"
+        ],
+        "to": "Westminster"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Westmintser",
+          "Westminter",
+          "Westminser",
+          "Westminster"
+        ],
+        "to": "Westminster"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Wetsminster",
+          "Westinster",
+          "Wesminster",
+          "Westminster"
+        ],
+        "to": "Westminster"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Fort Collns",
+          "Fort Colllins",
+          "Fort Collins",
+          "Fort. Collins"
+        ],
+        "to": "Fort Collins"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Commerce Cuty",
+          "Commercecity",
+          "Commerce City"
+        ],
+        "to": "Commerce City"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Grand Junction",
+          "Grand Juncion",
+          "Grand Junciton"
+        ],
+        "to": "Grand Junction"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Colorado Springs",
+          "Collorado Springs",
+          "Colcorado Springs"
+        ],
+        "to": "Colorado Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pagosasprings",
+          "Pagosa Springs",
+          "Pagosa Springs,"
+        ],
+        "to": "Pagosa Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Longmontc",
+          "Longmont",
+          "Longmount"
+        ],
+        "to": "Longmont"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Broomfield",
+          "Broomfild",
+          "Broomfied"
+        ],
+        "to": "Broomfield"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Littleton",
+          "Lilttleton",
+          "Litttleton"
+        ],
+        "to": "Littleton"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Fort Collns",
+          "Fort Colins",
+          "Fort Collins"
+        ],
+        "to": "Fort Collins"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Littleotn",
+          "Littleton",
+          "Littleon"
+        ],
+        "to": "Littleton"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Englewoood",
+          "Englewood",
+          "Englewood,"
+        ],
+        "to": "Englewood"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Evergrenn",
+          "Evergreen,",
+          "Evergreen"
+        ],
+        "to": "Evergreen"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Fort Collins",
+          "For Collins",
+          "Fortcollins"
+        ],
+        "to": "Fort Collins"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Westminter",
+          "Westminster,",
+          "Westminster"
+        ],
+        "to": "Westminster"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Grand Jctn",
+          "Grand Jct",
+          "Grand Jct."
+        ],
+        "to": "Grand Junction"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Fort  Collins",
+          "Fort Collins",
+          "Fort. Collins"
+        ],
+        "to": "Fort  Collins"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ft Collins",
+          "Ft. Collins",
+          "Ft.collins"
+        ],
+        "to": "Fort Collins"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Colorado Springs",
+          "Colorado Srpings",
+          "Colorado Spings"
+        ],
+        "to": "Colorado Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Breckenridge",
+          "Breckentidge",
+          "Brecxkenridge"
+        ],
+        "to": "Breckenridge"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Glenwood Springs",
+          "Glenwood Sprngs",
+          "Glenwood Springs,"
+        ],
+        "to": "Glenwood Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Fort Colins",
+          "Fort Coliins",
+          "Fort Collins"
+        ],
+        "to": "Fort Collins"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Steamboat Springs",
+          "Steamboat Springs,",
+          "Steamboat Srrings"
+        ],
+        "to": "Steamboat Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Colo. Spgs",
+          "Colo Sprgs",
+          "Colo Spgs"
+        ],
+        "to": "Colorado Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Broomfield",
+          "Brooomfield",
+          "Broomfield,"
+        ],
+        "to": "Broomfield"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aurorar",
+          "Aurora",
+          "Aurora,"
+        ],
+        "to": "Aurora"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Broomfield",
+          "Broomfild",
+          "Broomfield,"
+        ],
+        "to": "Broomfield"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lakewood,",
+          "Lakewood",
+          "Lakewoood"
+        ],
+        "to": "Lakewood"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Nothglenn",
+          "Norhglenn",
+          "Northglenn"
+        ],
+        "to": "Northglenn"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Wetsminster",
+          "Wesminster",
+          "Westminster"
+        ],
+        "to": "Westminster"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Littleton",
+          "Litttleton",
+          "Littleton,"
+        ],
+        "to": "Littleton"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lafayette,",
+          "Lafayette",
+          "Lafayettte"
+        ],
+        "to": "Lafayette"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Creede",
+          "Creede,"
+        ],
+        "to": "Creede"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Allenspark",
+          "Alleanspark"
+        ],
+        "to": "Allenspark"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Westminster,",
+          "Westminster"
+        ],
+        "to": "Westminster"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ft.garland",
+          "Ft Garland"
+        ],
+        "to": "Fort Garland"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Centennial",
+          "Cenetennial"
+        ],
+        "to": "Centennial"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Alamosa,",
+          "Alamosa"
+        ],
+        "to": "Alamosa"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Weatminster",
+          "Westminster"
+        ],
+        "to": "Westminster"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lakewood,",
+          "Lakewood"
+        ],
+        "to": "Lakewood"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Longmontc",
+          "Longmont"
+        ],
+        "to": "Longmont"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pagosa /Springs",
+          "Pagosa Springs"
+        ],
+        "to": "Pagosa Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Fort Colins",
+          "Fort Coliins"
+        ],
+        "to": "Fort Collins"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column City",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "State",
+          "selectBlank": false,
+          "columnName": "State",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "CO",
+                "l": "CO"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "City",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Crested Butte",
+          "Crested Butte,"
+        ],
+        "to": "Crested Butte"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Estes  Park",
+          "Estes Park"
+        ],
+        "to": "Estes  Park"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pueblo",
+          "Pueblo,"
+        ],
+        "to": "Pueblo"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Walsenburg",
+          "Wallsenburg"
+        ],
+        "to": "Walsenburg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Steamboat Springs",
+          "Steamboat  Springs"
+        ],
+        "to": "Steamboat Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Walsenburg",
+          "Wasenburg"
+        ],
+        "to": "Walsenburg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Woodland Park",
+          "Woodland :Park"
+        ],
+        "to": "Woodland Park"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Meeker",
+          "Meeker,"
+        ],
+        "to": "Meeker"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Idaho Springs",
+          "Idaho Spring"
+        ],
+        "to": "Idaho Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Kittredge",
+          "Kitredge"
+        ],
+        "to": "Kittredge"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Colorado Springs",
+          "Colorado Sprimgs"
+        ],
+        "to": "Colorado Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Crestone,",
+          "Crestone"
+        ],
+        "to": "Crestone"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Grand Junction",
+          "Grand Junctio0n"
+        ],
+        "to": "Grand Junction"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Colorado Springs",
+          "Colorado Spring"
+        ],
+        "to": "Colorado Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Englewood",
+          "Englewoo"
+        ],
+        "to": "Englewood"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Breckenridge",
+          "Brckenridge"
+        ],
+        "to": "Breckenridge"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cortez",
+          "Cortez,"
+        ],
+        "to": "Cortez"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lake George,",
+          "Lake George"
+        ],
+        "to": "Lake George"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column City",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "State",
+          "selectBlank": false,
+          "columnName": "State",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "CO",
+                "l": "CO"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "City",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Colorado Springs, Co.",
+          "Colorado Springs, Co"
+        ],
+        "to": "Colorado Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Monument,",
+          "Monument"
+        ],
+        "to": "Monument"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Manitou Sprgs",
+          "Manitou Spgs"
+        ],
+        "to": "Manitou Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Woodland Park",
+          "Woddland Park"
+        ],
+        "to": "Woodland Park"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Fort Collins",
+          "Fort  Collins"
+        ],
+        "to": "Fort Collins"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Steamboat Springs",
+          "Steamboat Sprimgs"
+        ],
+        "to": "Steamboat Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Rec Cliff",
+          "Red Cliff"
+        ],
+        "to": "Red Cliff"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Westminster",
+          "Westminister"
+        ],
+        "to": "Westminster"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Idaho Springs",
+          "Idaho Springs,"
+        ],
+        "to": "Idaho Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lakewood",
+          "Lakewod"
+        ],
+        "to": "Lakewood"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Boulder,",
+          "Boulder"
+        ],
+        "to": "Boulder"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Granby,",
+          "Granby"
+        ],
+        "to": "Granby"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Englewood",
+          "Englewodd"
+        ],
+        "to": "Englewood"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Commerce City",
+          "Commerce  City"
+        ],
+        "to": "Commerce City"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Centennial",
+          "Centenial"
+        ],
+        "to": "Centennial"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Co. Springs",
+          "Co Springs"
+        ],
+        "to": "Colorado Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Greenwd Vlg",
+          "Geenwd Vlg"
+        ],
+        "to": "Greenwood Village"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "New Castle",
+          "New  Castle"
+        ],
+        "to": "New Castle"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Berthoud,",
+          "Berthoud"
+        ],
+        "to": "Berthoud"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Strasburgh",
+          "Strasburg"
+        ],
+        "to": "Strasburg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Nederland,",
+          "Nederland"
+        ],
+        "to": "Nederland"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Eastlake",
+          "Eastlake,"
+        ],
+        "to": "Eastlake"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Glenwood Springs",
+          "Glenwood Spring"
+        ],
+        "to": "Glenwood Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Wheat Ridge",
+          "Wheat  Ridge"
+        ],
+        "to": "Wheat Ridge"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Wheat Ridge,",
+          "Wheat Ridge"
+        ],
+        "to": "Wheat Ridge"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Silvercreek",
+          "Silver Creek"
+        ],
+        "to": "Silver Creek"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Grand Junction",
+          "Grand  Junction"
+        ],
+        "to": "Grand Junction"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Grand Junction",
+          "Grand Juction"
+        ],
+        "to": "Grand Junction"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Winter Park",
+          "Winterpark"
+        ],
+        "to": "Winter Park"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Salida,",
+          "Salida"
+        ],
+        "to": "Salida"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Greeley,",
+          "Greeley"
+        ],
+        "to": "Greeley"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Milliken",
+          "Millikin"
+        ],
+        "to": "Milliken"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Colorado Spgs.",
+          "Colorado Spgs"
+        ],
+        "to": "Colorado Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "West Cliffe",
+          "Westcliffe"
+        ],
+        "to": "Westcliffe"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Glenwood Springs",
+          "Gleenwood Springs"
+        ],
+        "to": "Glenwood Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Castlerock",
+          "Castle Rock"
+        ],
+        "to": "Castle Rock"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Highland Ranch",
+          "Highlands Ranch"
+        ],
+        "to": "Highlands Ranch"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Westcliffe",
+          "Westcliffe,"
+        ],
+        "to": "Westcliffe"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Westiminister",
+          "Westminister"
+        ],
+        "to": "Westminster"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Glenwood Springs",
+          "Glenwood  Springs"
+        ],
+        "to": "Glenwood Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Arvada",
+          "Arvada,"
+        ],
+        "to": "Arvada"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Leadville,",
+          "Leadville"
+        ],
+        "to": "Leadville"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Basalt,",
+          "Basalt"
+        ],
+        "to": "Basalt"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pagosa Sprgs",
+          "Pagosa Spgs"
+        ],
+        "to": "Pagosa Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Monumenet",
+          "Monument"
+        ],
+        "to": "Monument"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Indianhills",
+          "Indian Hills"
+        ],
+        "to": "Indian Hills"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Denver",
+          "Denver,"
+        ],
+        "to": "Denver"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hesperus",
+          "Hdesperus"
+        ],
+        "to": "Hesperus"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Glenwood Sprgs",
+          "Glenwood Spgs"
+        ],
+        "to": "Glenwood Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Steamboat Spg",
+          "Steamboat Spgs"
+        ],
+        "to": "Steamboat Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ft. Lupton",
+          "Ft Lupton"
+        ],
+        "to": "Ft. Lupton"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pueblowest",
+          "Pueblo West"
+        ],
+        "to": "Pueblo West"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Silvercliff",
+          "Silver Cliff"
+        ],
+        "to": "Silvercliff"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sheridan",
+          "Sheridian"
+        ],
+        "to": "Sheridan"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Littleton",
+          "Litleton"
+        ],
+        "to": "Littleton"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Louisvile",
+          "Louisville"
+        ],
+        "to": "Louisville"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Parker,",
+          "Parker"
+        ],
+        "to": "Parker"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column City",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "State",
+          "selectBlank": false,
+          "columnName": "State",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "CO",
+                "l": "CO"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "City",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mt Crested Butte",
+          "Mt. Crested Butte"
+        ],
+        "to": "Mt. Crested Butte"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mt. Crested Butte",
+          "Mt.  Crested Butte"
+        ],
+        "to": "Mt. Crested Butte"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Longmont",
+          ":Longmont"
+        ],
+        "to": "Longmont"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Crawford,",
+          "Crawford"
+        ],
+        "to": "Crawford"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Steamboat Springs",
+          "Steamboat Scprings"
+        ],
+        "to": "Steamboat Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Crested Butte",
+          "Cested Butte"
+        ],
+        "to": "Crested Butte"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Carbondale",
+          "Carbondale,"
+        ],
+        "to": "Carbondale"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Morrison",
+          "Morrision"
+        ],
+        "to": "Morrison"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Laporte",
+          "Laport"
+        ],
+        "to": "Laporte"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Colo Springs",
+          "Colo. Springs"
+        ],
+        "to": "Colorado Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Colorado Springs",
+          "Coloado Springs"
+        ],
+        "to": "Colorado Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Colorado Springs",
+          "Cololrado Springs"
+        ],
+        "to": "Colorado Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Colorado Springs",
+          "Colorado  Springs"
+        ],
+        "to": "Colorado Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Grand Junction",
+          "Grand Junctiion"
+        ],
+        "to": "Grand Junction"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mt. Crested Butte,",
+          "Mt. Crested Butte"
+        ],
+        "to": "Mt. Crested Butte"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Idledale",
+          "Ideledale"
+        ],
+        "to": "Idledale"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column City",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "State",
+          "selectBlank": false,
+          "columnName": "State",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "CO",
+                "l": "CO"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "City",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Denver",
+          "Denveer",
+          "Denve R"
+        ],
+        "to": "Denver"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aurora",
+          "Auror A",
+          "Auroroa"
+        ],
+        "to": "Aurora"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Wheat Ridge",
+          "Wheatridge"
+        ],
+        "to": "Wheat Ridge"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Castle Rock",
+          "Castla Rock"
+        ],
+        "to": "Castle Rock"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Evergreen",
+          "Evergeen"
+        ],
+        "to": "Evergreen"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cliftion",
+          "Clifton"
+        ],
+        "to": "Clifton"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Laporte",
+          "La Porte"
+        ],
+        "to": "Laporte"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lakewood",
+          "Lakrewood"
+        ],
+        "to": "Lakewood"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Duranago",
+          "Durango"
+        ],
+        "to": "Durango"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aurora",
+          "Auroroa"
+        ],
+        "to": "Aurora"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Eaton",
+          "Eaton,"
+        ],
+        "to": "Eaton"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Westcliffe",
+          "Westliffe"
+        ],
+        "to": "Westcliffe"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Monument",
+          "Moument"
+        ],
+        "to": "Monument"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Denver",
+          "Denveer"
+        ],
+        "to": "Denver"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Debeque",
+          "De Beque"
+        ],
+        "to": "De Beque"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Denver",
+          "Denve"
+        ],
+        "to": "Denver"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Littelton",
+          "Litteton"
+        ],
+        "to": "Littleton"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Westcliffe",
+          "Westciffe"
+        ],
+        "to": "Westcliffe"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lyons,",
+          "Lyons"
+        ],
+        "to": "Lyons"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Severence",
+          "Severance"
+        ],
+        "to": "Severance"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ewards",
+          "Edwards"
+        ],
+        "to": "Edwards"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Thorthon",
+          "Thorton"
+        ],
+        "to": "Thornton"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lafayette",
+          "Lafeyette"
+        ],
+        "to": "Lafayette"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "La Junta",
+          "Lajunta"
+        ],
+        "to": "La Junta"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lakewood",
+          "Lakewwod"
+        ],
+        "to": "Lakewood"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Black Hawk",
+          "Blackhawk"
+        ],
+        "to": "Black Hawk"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Canon City",
+          "Canoncity"
+        ],
+        "to": "Canon City"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lasalle",
+          "La Salle"
+        ],
+        "to": "La Salle"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column City",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "State",
+          "selectBlank": false,
+          "columnName": "State",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "CO",
+                "l": "CO"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "City",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aurora",
+          "Auroa"
+        ],
+        "to": "Aurora"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Arvada",
+          "Aravada"
+        ],
+        "to": "Arvada"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lone Tree",
+          "Lonetree"
+        ],
+        "to": "Lone Tree"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Crestone",
+          "Cresone"
+        ],
+        "to": "Crestone"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Durango",
+          "Duango"
+        ],
+        "to": "Durango"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aurora",
+          "Auroara"
+        ],
+        "to": "Aurora"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Devide",
+          "Divide"
+        ],
+        "to": "Devide"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Rifle",
+          "Rifl"
+        ],
+        "to": "Rifle"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dilllon",
+          "Dillon"
+        ],
+        "to": "Dillon"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Longmont",
+          "Longomont"
+        ],
+        "to": "Longmont"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Loveland",
+          "Lovland"
+        ],
+        "to": "Loveland"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lafayette",
+          "Lafatette"
+        ],
+        "to": "Lafayette"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dnever",
+          "Dever"
+        ],
+        "to": "Denver"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Trindad",
+          "Trinidad"
+        ],
+        "to": "Trinidad"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Denver",
+          "Denvver"
+        ],
+        "to": "Denver"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Eastlake",
+          "East Lake"
+        ],
+        "to": "Eastlake"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aurora",
+          "Auorora"
+        ],
+        "to": "Aurora"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aspen",
+          "Aspepn"
+        ],
+        "to": "Aspen"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Boulder",
+          "Bouler"
+        ],
+        "to": "Boulder"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Greeley",
+          "Greeey"
+        ],
+        "to": "Greeley"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Fruita",
+          "Fuita"
+        ],
+        "to": "Fruita"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "La Veta",
+          "Laveta"
+        ],
+        "to": "La Veta"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column City",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "State",
+          "selectBlank": false,
+          "columnName": "State",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "CO",
+                "l": "CO"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "City",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aurora",
+          "Aurara",
+          "Aurura"
+        ],
+        "to": "Aurora"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aurara",
+          "Aurura"
+        ],
+        "to": "Aurora"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Gufey",
+          "Guffey"
+        ],
+        "to": "Guffey"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Boulder",
+          "Bouder"
+        ],
+        "to": "Boulder"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Arvada",
+          "Arvda"
+        ],
+        "to": "Arvada"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aurora",
+          "Auora"
+        ],
+        "to": "Aurora"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Denver",
+          "Dener"
+        ],
+        "to": "Denver"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aurora",
+          "Aurura"
+        ],
+        "to": "Aurora"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pueblo",
+          "Purblo"
+        ],
+        "to": "Pueblo"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column City",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "State",
+          "selectBlank": false,
+          "columnName": "State",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "CO",
+                "l": "CO"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "City",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pagosa Springs",
+          "Pagosa Springs Co"
+        ],
+        "to": "Pagosa Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Denver",
+          "Den"
+        ],
+        "to": "Denver"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cortez",
+          "Cory"
+        ],
+        "to": "Cortez"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lakewood",
+          "Lakewood Co"
+        ],
+        "to": "Lakewood"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "La Jarala Jara",
+          "La Jara"
+        ],
+        "to": "La Jara"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hot Sulphur Sprgs",
+          "Hot Sulphur Springs"
+        ],
+        "to": "Hot Sulphur Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Highlands Ranch",
+          "Highlands Rch"
+        ],
+        "to": "Highlands Ranch"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Westminster",
+          "Westminster Co"
+        ],
+        "to": "Westminster"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Englewood",
+          "Englewood Co"
+        ],
+        "to": "Englewood"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Canon City",
+          "Canon City Co"
+        ],
+        "to": "Canon City"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Durango",
+          "Durango Co"
+        ],
+        "to": "Durango"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Steamboat Spr.",
+          "Steamboat Sprgs"
+        ],
+        "to": "Steamboat Springs"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column City",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "State",
+          "selectBlank": false,
+          "columnName": "State",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "CO",
+                "l": "CO"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "City",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Denver Co.",
+          "Denver, Co"
+        ],
+        "to": "Denver"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column City",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "State",
+          "selectBlank": false,
+          "columnName": "State",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "CO",
+                "l": "CO"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "City",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Colorado Springs",
+          "Colorados Prings"
+        ],
+        "to": "Colorado Springs"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column City",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "State",
+          "selectBlank": false,
+          "columnName": "State",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "CO",
+                "l": "CO"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "City",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Steamboat",
+          "Stmbt."
+        ],
+        "to": "Steamboat"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Beuna Vista",
+          "Buena Vista"
+        ],
+        "to": "Buena Vista"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lake George",
+          "Lake Geroge"
+        ],
+        "to": "Lake George"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Galde Park",
+          "Glade Park"
+        ],
+        "to": "Glade Park"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Columbine Valley",
+          "Columbine Vly"
+        ],
+        "to": "Columbine Valley"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pueblo West",
+          "Peublo West"
+        ],
+        "to": "Pueblo West"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Rangely",
+          "Rangley"
+        ],
+        "to": "Rangely"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Confier",
+          "Conifer"
+        ],
+        "to": "Conifer"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Louisivlle",
+          "Lousiville"
+        ],
+        "to": "Louisville"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Grand Junction",
+          "Grand Junction,colorado"
+        ],
+        "to": "Grand Junction"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Denver",
+          "80224 Denver"
+        ],
+        "to": "Denver"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Colorado Springs",
+          "Coloraod Springs"
+        ],
+        "to": "Colorado Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Englewood",
+          "Engelwood"
+        ],
+        "to": "Englewood"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Centennial",
+          "Centennail"
+        ],
+        "to": "Centennial"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Johnstown",
+          "Johnstwon"
+        ],
+        "to": "Johnstown"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Fairplay",
+          "Fiarplay"
+        ],
+        "to": "Fairplay"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Morrison",
+          "Morriosn"
+        ],
+        "to": "Morrison"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Thornton",
+          "Thronton"
+        ],
+        "to": "Thornton"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Steamboat Springs",
+          "Stemaboat Springs"
+        ],
+        "to": "Steamboat Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Glenwood Springs",
+          "Glenwood Spirngs"
+        ],
+        "to": "Glenwood Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Antointo",
+          "Antonito"
+        ],
+        "to": "Antonito"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Loveland",
+          "Lovlenad"
+        ],
+        "to": "Loveland"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column City",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "State",
+          "selectBlank": false,
+          "columnName": "State",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "CO",
+                "l": "CO"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "City",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Idaho Springs",
+          "Idhao Springs"
+        ],
+        "to": "Idaho Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Fountain",
+          "Fountian"
+        ],
+        "to": "Fountain"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Gunnison",
+          "Gunnsion"
+        ],
+        "to": "Gunnison"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Greenwood Village",
+          "Greenwood Vlg"
+        ],
+        "to": "Greenwood Village"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column City",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "State",
+          "selectBlank": false,
+          "columnName": "State",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "CO",
+                "l": "CO"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "City",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Grand Junction",
+          "Near Grand Junction",
+          "Grand Juniton"
+        ],
+        "to": "Grand Junction"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Silverton",
+          "Silverthonre",
+          "Silverthorne"
+        ],
+        "to": "Silverthorne"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Creede",
+          "Creedeco"
+        ],
+        "to": "Creede"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Greeley",
+          "Greeley Co"
+        ],
+        "to": "Greeley"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Castle Rock",
+          "Caslte Rock"
+        ],
+        "to": "Castle Rock"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Colorado Springs",
+          "Eldorado Springs"
+        ],
+        "to": "Colorado Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Boulder",
+          "Boulder, Co"
+        ],
+        "to": "Boulder"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Steamboat",
+          "Steamboat Plaza"
+        ],
+        "to": "Steamboat"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Littleton",
+          "Littleton, Co"
+        ],
+        "to": "Littleton"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Silverthonre",
+          "Silverthorne"
+        ],
+        "to": "Silverthorne"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Colorado Springs",
+          "Colorado Sp"
+        ],
+        "to": "Colorado Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Broomfield",
+          "Broomfield, Co"
+        ],
+        "to": "Broomfield"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Eastlake",
+          "Eastland"
+        ],
+        "to": "Eastlake"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cherry Hills Village",
+          "Cherry Hills"
+        ],
+        "to": "Cherry Hills Village"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Thornton",
+          "Thornont"
+        ],
+        "to": "Thornton"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Idaho Springs",
+          "Idaho Spgs"
+        ],
+        "to": "Idaho Springs"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Edgewater",
+          "Edgewater, Co"
+        ],
+        "to": "Edgewater"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Nederland",
+          "Nerland"
+        ],
+        "to": "Nederland"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Green Mtn Falls",
+          "Green Mountain Falls"
+        ],
+        "to": "Green Mountain Falls"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Commerce City",
+          "Commerce"
+        ],
+        "to": "Commerce City"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Antonito",
+          "Anton"
+        ],
+        "to": "Antonito"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column City",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "State",
+          "selectBlank": false,
+          "columnName": "State",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "CA",
+                "l": "CA"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "City",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Los Angelos",
+          "Los Angeles"
+        ],
+        "to": "Los Angeles"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column City",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "State",
+          "selectBlank": false,
+          "columnName": "State",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "TX",
+                "l": "TX"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "City",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dallas1",
+          "Dallas"
+        ],
+        "to": "Dallas"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column City",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "State",
+          "selectBlank": false,
+          "columnName": "State",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "FL",
+                "l": "FL"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "City",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Fort Myers",
+          "Fort Meyers"
+        ],
+        "to": "Fort Meyers"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column City",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "City",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Colo Spgs"
+        ],
+        "to": "Colorado Springs"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column City",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "City",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Colo. Spgs."
+        ],
+        "to": "Colorado Springs"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column City",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "State",
+          "omitBlank": false,
+          "columnName": "State",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "CO",
+                "l": "CO"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "City",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Stmbt Spgs"
+        ],
+        "to": "Steamboat Springs"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column City",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "State",
+          "omitBlank": false,
+          "columnName": "State",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "CO",
+                "l": "CO"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "City",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Arvada, Co"
+        ],
+        "to": "Arvada"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column City",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "State",
+          "omitBlank": false,
+          "columnName": "State",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "CO",
+                "l": "CO"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "City",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aurora, Co 80010 United States"
+        ],
+        "to": "Aurora"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column City",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "State",
+          "omitBlank": false,
+          "columnName": "State",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "CO",
+                "l": "CO"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "City",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Co Spgs"
+        ],
+        "to": "Colorado Springs"
+      }
+    ]
+  }
+]
