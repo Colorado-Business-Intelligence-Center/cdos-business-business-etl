@@ -26,9 +26,9 @@
     "trademarks:extract": "curl -o trademarks.tsv -u $CDOS_SFTP_USERNAME:$CDOS_SFTP_PASSWORD -n --insecure --ftp-ssl sftp://ftps.sos.state.co.us/trademarks/trademarks.txt",
     "trademarks:transform": "node trademarks.js",
     "trademarks": "npm-run-all trademarks:*",
-    "trademarks_action": "act -j trademarks_etl --secret-file ../.secrets",
     "tradenames:extract": "curl -o tradenames.tsv -u $CDOS_SFTP_USERNAME:$CDOS_SFTP_PASSWORD -n --insecure --ftp-ssl sftp://ftps.sos.state.co.us/tradenames/tradenames.txt",
-    "tradenames:transform": "node tradenames.js"
+    "tradenames:transform": "node tradenames.js",
+    "trademarks_action": "act -j tradenames_etl --secret-file ../.secrets"
   },
   "repository": {
     "type": "git",

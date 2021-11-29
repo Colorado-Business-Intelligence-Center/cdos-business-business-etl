@@ -27,15 +27,15 @@ jobs:
         run: npm i
       - name: extract
         run: npm run tradenames:extract
-      # - name: transform
-      #   run: npm run tradenames:transform
-      # - name: load
-      #   env:
-      #     MY_SOCRATA_USERNAME: ${{ secrets.MY_SOCRATA_USERNAME }}
-      #     MY_SOCRATA_PASSWORD: ${{ secrets.MY_SOCRATA_PASSWORD }}
-      #     DATASET_ID: d3m2-b6we
-      #     UPLOAD_FILE: tradenames.csv
-      #     CONFIG_NAME: trademarks_11-23-2021_da45
-      #   run: |
-      #     pip install socrata-py~=1.0.0
-      #     python3 socrata-updater.py
+      - name: transform
+        run: npm run tradenames:transform
+      - name: load
+        env:
+          MY_SOCRATA_USERNAME: ${{ secrets.MY_SOCRATA_USERNAME }}
+          MY_SOCRATA_PASSWORD: ${{ secrets.MY_SOCRATA_PASSWORD }}
+          DATASET_ID: u7sb-g482
+          UPLOAD_FILE: tradenames.csv
+          CONFIG_NAME: tradenames_11-29-2021_7780
+        run: |
+          pip install socrata-py~=1.0.0
+          python3 socrata-updater.py
