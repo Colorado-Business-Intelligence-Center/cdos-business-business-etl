@@ -1,4 +1,3 @@
-require('dotenv').config({path: __dirname + '/../../../../.env'});
 const fs = require('fs');
 const path = require('path');
 const program = require('commander');
@@ -6,61 +5,45 @@ const parse = require('csv-parse');
 const transform = require('stream-transform');
 const stringify = require('csv-stringify');
 const moment = require('moment');
-const custom_log = require(path.join(process.env.bic_etl_home, 'general/scripts/custom_log.js'));
-const orr = require(path.join(process.env.bic_etl_home, 'cdos/business/nonprofit/scripts/orr.js'));
-const orrCity = new orr({"state": "CO", "rulesPath": path.join(process.env.bic_etl_home, 'cdos/business/business/scripts/rules', 'rules-tradenames-city.txt')});
-const orrMailingCity = new orr({"state": "CO", "rulesPath": path.join(process.env.bic_etl_home, 'cdos/business/business/scripts/rules', 'rules-tradenames-mailingcity.txt')});
-const custom_helper = require(path.join(process.env.bic_etl_home, 'cdos', 'business', 'nonprofit', 'scripts', 'helper_transform_functions.js'));
+const orr = require('./orr.js');
+const orrCity = new orr({"state": "CO", "rulesPath": path.join('rules', 'rules-tradenames-city.txt')});
+const orrMailingCity = new orr({"state": "CO", "rulesPath": path.join('rules', 'rules-tradenames-mailingcity.txt')});
+const custom_helper = require('./helper_transform_functions.js');
 
 program
-	.option('-t, --title <n>', 'Dataset Title')
 	.option('-f, --folderpath <n>', 'File path')
 	.option('-e, --ext <n>', '.txt')
 	.parse(process.argv);
 
-program.title = (program.title) ? program.title : 'Trademarks';
-let log = {};
-custom_log.setup(program.title, function(custom_logger) {
-  log = custom_logger;
-  try {
-    initiate();
-  } catch(e) {
-    log.error("Unhandled error: " + e);
-    process.exit();
-  }
-});
-
 let tradename_form_list = {};
 
-function initiate() {
-	let ext = (program.ext) ? program.ext : '.txt';
-	let filepath = (program.folderpath) ? program.folderpath : path.join(process.env.bic_etl_home, 'cdos', 'business', 'business', 'data_source', 'tradenames.tsv');;
-	filepath = path.resolve(filepath);
+let ext = (program.ext) ? program.ext : '.txt';
+let filepath = (program.folderpath) ? program.folderpath : 'tradenames.tsv';
+filepath = path.resolve(filepath);
 
-	let outfile = path.join(process.env.bic_etl_home, 'cdos', 'business', 'business', 'data_transformed', 'tradenames.csv');
-	let tradename_form_file = path.join(process.env.bic_etl_home, 'cdos', 'business', 'business', 'scripts', 'rules', 'tradename_form.csv');
+let outfile = 'tradenames.csv';
+let tradename_form_file = path.join('rules', 'tradename_form.csv');
 
-	if (!fs.existsSync(filepath)) {
-		log.warn("Folder does not does not exist to load CSV files for analysis: " + filepath);
-		process.exit(0);
-	}
-
-	let input_stream = fs.createReadStream(tradename_form_file)
-	.on('error', error_handler);
-	//Parse input
-	let tradename_form_parser = parse({
-			delimiter: ",",
-			columns: true
-	}).on('readable', function(){
-		let record
-		while (record = this.read()) {
-			tradename_form_list[record['key']] = record['value'];
-		}
-	}).on('end', function() {
-		transform_tradenames(filepath, outfile); // Executes the processing
-	})
-	input_stream.pipe(tradename_form_parser);
+if (!fs.existsSync(filepath)) {
+  console.error("Folder does not does not exist to load CSV files for analysis: " + filepath);
+  process.exit(0);
 }
+
+let input_stream = fs.createReadStream(tradename_form_file)
+.on('error', error_handler);
+//Parse input
+let tradename_form_parser = parse({
+    delimiter: ",",
+    columns: true
+}).on('readable', function(){
+  let record
+  while (record = this.read()) {
+    tradename_form_list[record['key']] = record['value'];
+  }
+}).on('end', function() {
+  transform_tradenames(filepath, outfile); // Executes the processing
+})
+input_stream.pipe(tradename_form_parser);
 
 let header_columns = [
     "masterTradenameId",
@@ -143,7 +126,7 @@ function transformation(row) {
 }
 
 function error_handler(e) {
-    log.error("Error mid-stream: " + e);
+    console.error("Error mid-stream: " + e);
     setTimeout(function() {
       process.exit(1);
     }, 200);
@@ -153,7 +136,7 @@ function error_handler(e) {
    This function will get the files to be transformed and perform the transform
 */
 function transform_tradenames(file_path, outfile) {
-  log.debug("Files to be transformed: " + file_path);
+  console.log("Files to be transformed: " + file_path);
   //Original file
   let input_stream = fs.createReadStream(file_path)
   .on('error', error_handler);
@@ -180,6 +163,6 @@ function transform_tradenames(file_path, outfile) {
 
   //Once complete
   output_stream.on('finish', function() {
-      log.debug('All items have been processed, final file is at: '+ outfile);
+      console.log('All items have been processed, final file is at: '+ outfile);
   });
 }

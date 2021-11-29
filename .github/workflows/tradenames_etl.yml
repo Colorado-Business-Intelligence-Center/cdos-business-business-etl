@@ -1,5 +1,5 @@
 ---
-name: CDOS Trademarks for Businesses in Colorado
+name: CDOS Trade Names for Businesses in Colorado
 #      ^ use the exact wording of the dataset found on Socrata
 #        as well as the organization the dataset is associated with. 
 
@@ -9,8 +9,8 @@ on:
   #   - cron: '0 4 * * 2'
 
 jobs:
-  trademarks_etl:
-    name: ETL for CDOS Trademarks
+  tradenames_etl:
+    name: ETL for CDOS Tradenames
     runs-on: ubuntu-latest
     env:
       CDOS_SFTP_USERNAME: ${{ secrets.CDOS_SFTP_USERNAME }}
@@ -26,16 +26,16 @@ jobs:
       - name: setup dependencies
         run: npm i
       - name: extract
-        run: npm run trademarks:extract
-      - name: transform
-        run: npm run trademarks:transform
-      - name: load
-        env:
-          MY_SOCRATA_USERNAME: ${{ secrets.MY_SOCRATA_USERNAME }}
-          MY_SOCRATA_PASSWORD: ${{ secrets.MY_SOCRATA_PASSWORD }}
-          DATASET_ID: d3m2-b6we
-          UPLOAD_FILE: trademarks.csv
-          CONFIG_NAME: trademarks_11-23-2021_da45
-        run: |
-          pip install socrata-py~=1.0.0
-          python3 socrata-updater.py
+        run: npm run tradenames:extract
+      # - name: transform
+      #   run: npm run tradenames:transform
+      # - name: load
+      #   env:
+      #     MY_SOCRATA_USERNAME: ${{ secrets.MY_SOCRATA_USERNAME }}
+      #     MY_SOCRATA_PASSWORD: ${{ secrets.MY_SOCRATA_PASSWORD }}
+      #     DATASET_ID: d3m2-b6we
+      #     UPLOAD_FILE: tradenames.csv
+      #     CONFIG_NAME: trademarks_11-23-2021_da45
+      #   run: |
+      #     pip install socrata-py~=1.0.0
+      #     python3 socrata-updater.py

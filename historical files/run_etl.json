@@ -29,15 +29,6 @@
     }
   }, {
       "title": "Trade Names for Businesses in Colorado",
-      "extract": {
-        "language": "node",
-        "file": "general/scripts/sftp_extract.js",
-        "options": [
-          "-f tradenames/tradenames.txt",
-          "-o cdos/business/business/data_source/",
-          "-a .tsv"
-          ]
-      },
       "transform": {
         "language": "node",
         "file": "tradenames.js"
