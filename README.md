@@ -1,6 +1,11 @@
 # cdos-business-business-etl
 ETL processes for the CDOS business/business data to data.colorado.gov
 
+## Dataset ETL's
+- [![CDOS Business Tests](https://github.com/Xentity-test-etl-actions/cdos-business-business-etl/actions/workflows/business_etl_test.yml/badge.svg)](https://github.com/Xentity-test-etl-actions/cdos-business-business-etl/actions/workflows/business_etl_test.yml)
+- [![Business Entities in Colorado](https://github.com/Xentity-test-etl-actions/cdos-business-business-etl/actions/workflows/business_entities_etl.yml/badge.svg)](https://github.com/Xentity-test-etl-actions/cdos-business-business-etl/actions/workflows/business_entities_etl.yml)
+
+
 ## Requirements
 In order to develop with this system, you'll need the following:
  - [Socrata DataSync](https://github.com/socrata/datasync/releases)
@@ -11,7 +16,7 @@ In order to develop with this system, you'll need the following:
 This is meant to be utilized in a similar manner to other repositories.
 In order to simplify setup and changing secrets, certain files are expected one level above
 this repo. We expect the following in the folder above where the repo is locally:
- - .secrets file, containing `CDOS_SFTP_USERNAME=`, `CDOS_SFTP_PASSWORD=', 'MY_SOCRATA_USERNAME=', 'MY_SOCRATA_PASSWORD=`
+ - .secrets file, containing `CDOS_SFTP_USERNAME=`, `CDOS_SFTP_PASSWORD=`, `MY_SOCRATA_USERNAME=`, and `MY_SOCRATA_PASSWORD=`
 
 We also expect you to "source" the environment variables in the secrets file,
 on linux this looks like `source ../.secrets`
